@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Добро пожаловать, {{ user.username }}!</h1>
+<form method="POST" action="{{ url_for('add_entry') }}">
+    <div class="mb-3">
+        <label for="user_input" class="form-label">Введите текст</label>
+        <input type="text" class="form-control" id="user_input" name="user_input" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Опубликовать</button>
+</form>
+{% endblock %}
