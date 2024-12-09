@@ -3,8 +3,8 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 from . import app
 
-from app.models import *
-from app.forms import *
+from .models import *
+from .forms import *
 
 
 
